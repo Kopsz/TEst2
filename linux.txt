@@ -1,0 +1,10 @@
+mcedit /fájl_név/ - fájl edit
+#!/usr/bin/bash 
+setxkbmap -v -milyen beállítása van a billenytűzetnek
+echo ${kiosztas:15:2} - 15-ik karaktertől 2-őt kivág
+
+case $nyelv in
+	hu) ujnyelv="us" ;;
+	us) ujnyelv="hu" ;;
+esac
+

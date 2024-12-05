@@ -1,0 +1,149 @@
+DHTML - Dynamic Hypertext Markup Language(JS,CSS,HTML)
+ 
+			   DOM
+			    |   \
+			    |    \
+			  head  body
+                                |      \
+                                div    span
+                                         |
+     					div
+
+
+document.getElementById()
+document.getElementsByClassName('class neve') HTMLCollection
+document.getElementsByTagName('tag neve') HTMLCollection
+HTMLElement
+
+.innerText
+.innerHTML
+getAttribute('attr neve')
+setAttribute('attr neve','attr értéke')
+removeAttribute('attr neve')
+
+remove()
+.style.color='red'
+.style.textAlign ="center" CamelCase
+font-weight: bold;
+fontWeight = 'bold' CamelCase
+transition: all 5s linear
+
+document.createElement('tag név')
+document.head
+dicument.body.appendChild(elem)
+
+appendChild(HTMLElement)
+
+classList.add()
+classList.remove()
+classList.contains('gyumolcs')
+
+let handler = setInterval(fv,time) --> vár és futtat
+setTimeout(fv,time)--^
+
+var idozitve = function(){
+	console.log('Hello')
+}
+
+setTimeout(idozitve,3000)
+
+console.log('vége')
+Asszinkron függvény(callback fv) 1. vége 3mp után  HELLO
+
+clearInterval(handler)
+clearTimeout(handler)
+
+let katt = (a) => {
+	return a === 1
+}
+
+let katt = (a, b) => a === 1
+addEventListener('click', () => {})
+
+window.katt()
+window["katt"]()
+
+td.style.color=c==='X'?'blue':'red'
+td.style.color legyen egyenlő: kék ha X egyébként piros
+
+-------------------------
+
+display--inline -- span
+   |
+ block -- div
+	
+display: none --> nem látszik, nem foglal helyet
+opacity(0,1 közötti szám): 1 --> látható; 0--> láthatatlan, helyet foglal
+
+koordináta
+left,top
+mindig bal felső részét nézi
+absolute poz. (css tulajdonság)
+relatív poz. ahova tette a display m. onnan tolja el
+-------------------------
+
+
+Dokumentáció:
+	-JSdoc - képes az utasításokból legenerálni egy kategorizált használait
+/**
+komment alatti dokumentálása következik
+80 karakter
+visszaadja a téglalap területét, amit az a és b-vel jelöljük
+@param {number} a	téglalap a oldala
+@param {number} b	téglalap b oldala
+@returns {number} t	téglalap területe
+*/
+
+function terulet(a,b){
+
+	return a*b
+}
+
+/**
+@author		szerző
+@version	verzió
+@created	creation date
+@licences	szerződés --> GPL(General Public Licences)
+*/
+
+
+//1. sex2() 2. sex(), div onclick = szülő div felé terjed
+<div onclick="sex(event)" >
+<button onclick="sex2()"> Gomb </button>
+</div>
+
+function sex2(event){
+	event.target
+	event.shift
+	event.keyCode
+	event.preventDefault()
+}
+
+onClick		kattintás
+onMouseDown	a pont lenyomta
+onMouseUp	felengette
+onMouseMove	fölött mozog
+onMouseEnter	amikor megjelent felette
+onMouseLeave	elhagyta
+onTouch		éríntő
+onResize	átméretezés
+3.onKeyPress	lenyomtá 1 billentyűt(fel is engedte)
+1.onKeyDown	nem engedte fel
+2.onKeyUp	elengedte
+
+button.addEventListener('click', ()=>{
+	console...
+}) //html: onclick, script: click
+
+button.addEventListener('click', ()=>{
+	console...
+}) //html nincs 2 onclick, így kétszer iratkozik fel
+button.removeEventListener('click',sex)
+
+Date - dátum 1970.01.01
+
+let now = new Date()
+now.toLocateString('hu')
+now.getFullYear()
+getMonth() 0-11
+now.getDay() 0(vasárnap)
