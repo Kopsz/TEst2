@@ -147,3 +147,5 @@ now.toLocateString('hu')
 now.getFullYear()
 getMonth() 0-11
 now.getDay() 0(vasárnap)
+
+BOMBACLAT
